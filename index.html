@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO: 이름/설명 수정 -->
+  <title>Donghwan Kim</title>
+  <meta name="description" content="Donghwan Kim's academic portfolio">
+  <meta property="og:title" content="Donghwan Kim">
+  <meta property="og:description" content="Donghwan Kim — undergraduate student at SKKU working on end-to-end autonomous driving and token pruning.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Noto+Sans+KR:wght@400..800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css?v=6">
+  <!-- Font Awesome (일반 아이콘) + Academicons (Google Scholar, ORCID 등 학술 아이콘) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+</head>
+<body>
+
+<!-- ===================== 상단 네비게이션 ===================== -->
+<header class="masthead">
+  <div class="masthead__inner-wrap">
+    <a class="site-title" href="#about">Donghwan Kim</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    <nav class="site-nav" id="site-nav">
+      <ul>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <!-- <li><a href="#honors">Honors &amp; Awards</a></li> -->
+        <li><a href="#teaching">Teaching &amp; Service</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" role="main">
+<div class="home-wrapper">
+
+  <!-- ===================== About (Hero) ===================== -->
+  <section class="home-section home-hero" id="about">
+    <img class="home-hero__avatar" src="images/profile.jpg" alt="Donghwan Kim">
+    <div class="home-hero__bio">
+      <h1>Donghwan Kim</h1>
+      <p>
+        I am an undergraduate student at Sungkyunkwan University.
+        My research interests include autonomous driving systems, end-to-end (E2E) autonomous driving, and vehicle control.
+        Currently, I'm working on token pruning for VLM-based end-to-end driving models,
+        focusing on how to reduce computation without losing spatial information.
+      </p>
+      <div class="home-hero__links">
+        <a href="mailto:hwany01@g.skku.edu"><i class="fas fa-envelope"></i> hwany01@g.skku.edu</a>
+        <a href="https://github.com/churrosboy"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/donghwankim01/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===================== News ===================== -->
+  <section class="home-section" id="news">
+    <h2>News</h2>
+    <article class="pub-card pub-card--news">
+      <div class="pub-card__body">
+        <div class="pub-card__header">
+          <h3 class="pub-card__title">Greater things are yet to come!</h3>
+          <span class="pub-card__badge">Sep 2026</span>
+        </div>
+      </div>
+    </article>
+    <!-- 뉴스 항목 추가 시 위 <article> 블록 복사 -->
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===================== Education ===================== -->
+  <section class="home-section" id="education">
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry__head">
+        <h3 class="entry__title">Sungkyunkwan University <span class="entry__location">· Suwon, South Korea</span></h3>
+        <span class="entry__date">Expected Feb 2027</span>
+      </div>
+      <p class="entry__meta">B.S. in Computer Science and Engineering</p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===================== Experience ===================== -->
+  <section class="home-section" id="experience">
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="entry__head">
+        <h3 class="entry__title">Research Intern (URP) · Automotive Mechatronics Lab</h3>
+        <span class="entry__date">Jun 2026 – Aug 2026</span>
+      </div>
+      <p class="entry__meta">Department of Mechanical Engineering, Sungkyunkwan University · Suwon, South Korea</p>
+      <p class="entry__project">Active Suspension Control System Development for Maximum Regenerative Energy</p>
+      <ul>
+        <li>Developed a 14-state full-car dynamics model and integrated CarMaker with MATLAB/Simulink for co-simulation validation.</li>
+        <li>Designed LQR, LQI, and model-free active suspension controllers to redistribute rear-wheel loads and expand the regenerative braking envelope during cornering.</li>
+        <li>Achieved an 11.6% increase in average deceleration and a 15.79% increase in regenerative energy recovery compared with passive suspension.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry__head">
+        <h3 class="entry__title">Research Intern (URP) · Automation Lab</h3>
+        <span class="entry__date">Dec 2025 – Feb 2026</span>
+      </div>
+      <p class="entry__meta">Department of Semiconductor Systems Engineering, Sungkyunkwan University · Suwon, South Korea</p>
+      <p class="entry__project">Multi-Camera Visual Odometry (VO) Development for High-Accuracy Localization</p>
+      <ul>
+        <li>Developed a 360-degree perception module using a 4-camera setup based on the BASALT algorithm.</li>
+        <li>Designed a dual-stereo pair configuration and integrated the outputs via Extended Kalman Filter (EKF) fusion to improve localization accuracy without loop closure.</li>
+        <li>Authored and submitted a technical paper to the Korea Information Processing Society (KIPS) based on the research results.</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===================== Publications ===================== -->
+  <section class="home-section" id="publications">
+    <h2>Publications</h2>
+
+    <article class="pub-card">
+      <div class="pub-card__media">
+        <video src="images/publications/active-suspension.mp4" poster="images/publications/active-suspension-poster.jpg" autoplay loop muted playsinline preload="metadata" aria-label="Active suspension co-simulation"></video>
+      </div>
+      <div class="pub-card__body">
+        <div class="pub-card__header">
+          <h3 class="pub-card__title">Regenerative Braking Enhancement via Active-Suspension Load Redistribution</h3>
+          <span class="pub-card__badge">KSAE 2026 Annual Autumn Conference<br><em class="pub-card__status">Submitted</em></span>
+        </div>
+        <p class="pub-card__subtitle">Regenerative Braking Enhancement for Rear-Wheel-Drive Electric Vehicles during Cornering Deceleration via Active-Suspension Load Redistribution</p>
+        <p class="pub-card__authors">HyeonAh Ko, MinGun Choi, <strong>Donghwan Kim</strong>, SeungSeop Shin, and Sung-Ho Hwang*</p>
+        <div class="pub-card__desc">
+          <p>Active suspension redistributes diagonal wheel loads to widen the regenerative braking margin of a rear-wheel-drive EV during cornering. Validated in MATLAB/Simulink–CarMaker co-simulation: +16.04% recovered energy and +11.6% mean deceleration over passive suspension.</p>
+        </div>
+        <div class="pub-card__tags">
+          <span class="pub-card__tag">Vehicle Control</span>
+          <span class="pub-card__tag">Active Suspension</span>
+          <span class="pub-card__tag">Regenerative Braking</span>
+          <span class="pub-card__tag">CarMaker</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="pub-card">
+      <div class="pub-card__media">
+        <video src="images/publications/multicam-vo.mp4" poster="images/publications/multicam-vo-poster.jpg" autoplay loop muted playsinline preload="metadata" aria-label="Multi-camera visual odometry demo"></video>
+      </div>
+      <div class="pub-card__body">
+        <div class="pub-card__header">
+          <h3 class="pub-card__title">BASALT-Based Visual Odometry with Front–Rear Stereo Fisheye Views</h3>
+          <span class="pub-card__badge">ASK 2026<br><em class="pub-card__status">Annual Spring Conference of KIPS</em></span>
+        </div>
+        <p class="pub-card__subtitle">Evaluation of BASALT-Based Visual Odometry with Integrated Front–Rear Stereo Fisheye Views</p>
+        <p class="pub-card__authors"><strong>Donghwan Kim</strong>, Suna Choe, Hye Jun Hong, and Jae Wook Jeon*</p>
+        <div class="pub-card__desc">
+          <p>360° visual odometry with front and rear stereo fisheye pairs on BASALT, fused by an EKF. Cut return-to-origin drift by 84.2% (to 0.812 m) versus the front-only baseline on a miniature EV.</p>
+        </div>
+        <div class="pub-card__tags">
+          <span class="pub-card__tag">Visual Odometry</span>
+          <span class="pub-card__tag">Multi-Camera</span>
+          <span class="pub-card__tag">EKF</span>
+          <span class="pub-card__tag">Localization</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ===================== Projects ===================== -->
+  <section class="home-section" id="projects">
+    <h2>Projects</h2>
+
+    <article class="pub-card">
+      <div class="pub-card__media">
+        <video src="images/projects/f1tenth.mp4" poster="images/projects/f1tenth-poster.jpg" autoplay loop muted playsinline preload="metadata" aria-label="F1TENTH autonomous race car"></video>
+      </div>
+      <div class="pub-card__body">
+        <div class="pub-card__header">
+          <h3 class="pub-card__title">F1TENTH (IFAC Roboracer 2026)</h3>
+          <span class="pub-card__badge">2026</span>
+        </div>
+        <div class="pub-card__desc">
+          <p>Led the SKKAI Mobility Team to build a 1/10-scale autonomous race car for our first IFAC Roboracer 2026 appearance, adapting the ForzaETH racing stack (ROS 2 Humble, Cartographer SLAM) to a custom platform with a SOSLAB GL-5 2D LiDAR and an NVIDIA Jetson Orin Nano. Migrated the perception and overtaking planner from Python to C++ to cut onboard CPU load, and improved head-to-head robustness with overtaking/evasion maneuvers validated in on-vehicle tests.</p>
+        </div>
+        <div class="pub-card__tags">
+          <span class="pub-card__tag">ROS 2</span>
+          <span class="pub-card__tag">C++</span>
+          <span class="pub-card__tag">SLAM</span>
+          <span class="pub-card__tag">Autonomous Racing</span>
+        </div>
+        <div class="pub-card__links">
+          <a href="https://churrosboy.github.io/SKKUDERIA_SKKAI_blog/"><i class="fas fa-globe"></i> Website</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="pub-card">
+      <div class="pub-card__media">
+        <span class="pub-card__award"><i class="fas fa-medal"></i> Silver Prize</span>
+        <video src="images/projects/antenna-tracking.mp4" poster="images/projects/antenna-tracking-poster.jpg" autoplay loop muted playsinline preload="metadata" aria-label="Predictive antenna tracking outdoor test"></video>
+      </div>
+      <div class="pub-card__body">
+        <div class="pub-card__header">
+          <h3 class="pub-card__title">LAT: LSTM Antenna Tracker</h3>
+          <span class="pub-card__badge">2026</span>
+        </div>
+        <div class="pub-card__desc">
+          <p>Led development of a directional antenna that predicts a drone's next position with an LSTM (GPS, RSSI, IMU, servo angles) and pre-aims a ROS 2–Teensy pan/tilt rig, removing the lag of position-based tracking. Validated in outdoor flight tests; Silver Prize at the SKKU Creative Capstone Design Competition (Jun 2026).</p>
+        </div>
+        <div class="pub-card__tags">
+          <span class="pub-card__tag">LSTM</span>
+          <span class="pub-card__tag">ROS 2</span>
+          <span class="pub-card__tag">Embedded Control</span>
+          <span class="pub-card__tag">Drone</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="pub-card">
+      <div class="pub-card__media">
+        <video src="images/projects/fastlio-carla.mp4" poster="images/projects/fastlio-carla-poster.jpg" autoplay loop muted playsinline preload="metadata" aria-label="FAST-LIO2 mapping in CARLA"></video>
+      </div>
+      <div class="pub-card__body">
+        <div class="pub-card__header">
+          <h3 class="pub-card__title">LiDAR-IMU SLAM for Racing Vehicle Localization</h3>
+          <span class="pub-card__badge">2025</span>
+        </div>
+        <div class="pub-card__desc">
+          <p>Integrated a FAST-LIO2 odometry pipeline into the SKKAI Physical AI Team's racing vehicle stack (Ouster OS0-64, Xsens MTi-7, NVIDIA Jetson AGX Orin, ROS Noetic), replacing network-dependent GPS localization with on-device SLAM to cut latency and improve robustness. Validated mapping in the CARLA simulator and in on-vehicle tests.</p>
+        </div>
+        <div class="pub-card__tags">
+          <span class="pub-card__tag">SLAM</span>
+          <span class="pub-card__tag">FAST-LIO2</span>
+          <span class="pub-card__tag">ROS</span>
+          <span class="pub-card__tag">CARLA</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- Honors & Awards: 임시 숨김. 다시 보이게 하려면 이 주석을 풀고 네비게이션 링크도 복원
+  <hr class="section-divider">
+
+  [ Honors & Awards ]
+  <section class="home-section" id="honors">
+    <h2>Honors &amp; Awards</h2>
+    <ul>
+      <li><strong>Silver Prize</strong>, SKKU Creative Capstone Design Competition (2026), College of Engineering, Sungkyunkwan University – LAT (LSTM Antenna Tracker), a predictive antenna tracking system for drones.</li>
+    </ul>
+  </section>
+  -->
+
+  <hr class="section-divider">
+
+  <!-- ===================== Teaching & Service ===================== -->
+  <section class="home-section" id="teaching">
+    <h2>Teaching &amp; Service</h2>
+
+    <article class="pub-card pub-card--compact">
+      <div class="pub-card__media">
+        <img src="images/teaching/lidar-workshop.jpg" alt="Leading the LiDAR hands-on session at the SKKAI x SOSLAB workshop">
+      </div>
+      <div class="pub-card__body">
+        <div class="pub-card__header">
+          <h3 class="pub-card__title">Instructor, SKKAI × SOSLAB LiDAR and Tech Startup Workshop</h3>
+          <span class="pub-card__badge">Sep 2026</span>
+        </div>
+        <div class="pub-card__desc">
+          <p>Led the workshop as SKKAI Mobility session head, hosting a talk by SOSLAB's CEO and running a hands-on ROS 2 + LiDAR obstacle-detection lab for 30+ SKKU students.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="pub-card pub-card--compact">
+      <div class="pub-card__media">
+        <img src="images/teaching/precollege-camp.jpg?v=3" alt="Mentoring students with an F1TENTH race car at the Pre-college AI·SW Camp">
+      </div>
+      <div class="pub-card__body">
+        <div class="pub-card__header">
+          <h3 class="pub-card__title">Mentor, 2026 Osan City–SKKU Pre-college AI·SW Camp</h3>
+          <span class="pub-card__badge">Aug 2026</span>
+        </div>
+        <div class="pub-card__desc">
+          <p>Taught middle and high school students the basics of autonomous driving with hands-on F1TENTH race car demos.</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+</div>
+</main>
+
+<footer class="page__footer">
+  <div class="footer-links">
+    <a href="mailto:hwany01@g.skku.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/churrosboy" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/donghwankim01/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div>&copy; <span id="year">2026</span> Donghwan Kim. All rights reserved.</div>
+</footer>
+
+<script>
+  // 모바일 메뉴 토글
+  (function () {
+    var btn = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('site-nav');
+    btn.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        nav.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('.pub-card__media video').forEach(function (v) {
+      v.muted = true;
+      var p = v.play(); if (p && p.catch) p.catch(function () {});
+    });
+  })();
+</script>
+</body>
+</html>
