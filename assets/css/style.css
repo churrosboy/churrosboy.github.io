@@ -317,7 +317,7 @@ ul { margin: 0 0 1em; }
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
 }
-.pub-card__body { flex: 1; min-width: 0; padding: 1.25em; }
+.pub-card__body { display: flex; flex-direction: column; flex: 1; min-width: 0; padding: 1.25em; }
 .pub-card__header {
   display: flex;
   align-items: flex-start;
@@ -353,6 +353,7 @@ ul { margin: 0 0 1em; }
 }
 .pub-card__links {
   display: flex;
+  margin-top: auto;
   flex-wrap: wrap;
   gap: 1em;
   padding-top: 0.6em;
